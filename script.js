@@ -1,6 +1,10 @@
-var numeroMentalizado = 43
+ //quando o chute for diferente
+ while (chute!=numeroMentalizado) {
+      
+ 
+  var numeroMentalizado = 43
 
-var chute = prompt('Chute um número de 1 a 100')
+  var chute = prompt('Chute um número de 1 a 100')
 
 //se o chute for igual ao numero mentalizado 
   if (chute == numeroMentalizado) {
@@ -13,3 +17,4 @@ var chute = prompt('Chute um número de 1 a 100')
   else if (chute < numeroMentalizado) {
     alert('Errou o número é maior tente novamente')  
   }
+}
