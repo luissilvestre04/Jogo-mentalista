@@ -7,6 +7,8 @@ var limiteDeChutes = 12;
 //chutes restantes
 var chutesRestantes = limiteDeChutes;
 
+var avisoDechutes
+
 alert("O Jogo vai começar. Você tem um limite de " + limiteDeChutes + " chutes!");
 
 while  (chute != numeroMentalizado) {
@@ -33,7 +35,10 @@ while  (chute != numeroMentalizado) {
   else if (chute < numeroMentalizado) {
     alert(chute + " ? Não. Errou... o número é maior tente novamente")
   }
-  
+  //aviso de 6 chutes
+  if (chutes === 6) {
+    alert("Atençao você já fez um total de 6 chutes !");
+  }
 }
 //alert de total de chutes
   alert("Você fez um total de " + chutes + " chute(s)!")
