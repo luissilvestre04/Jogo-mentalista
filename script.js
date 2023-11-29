@@ -1,15 +1,25 @@
 //número ramdômico
-var numeroMentalizado = parseInt(Math.random() * 101)
-
-// FAZENDO UM CONTADOR DE CHUTES
+var numeroMentalizado = parseInt(Math.random() * 101) 
+// CONTADOR DE CHUTES
 var chutes = 0;
- //
+//limite de chutes 
+var limiteDeChutes = 12;
+//chutes restantes
+var chutesRestantes = limiteDeChutes;
+
+alert("O Jogo vai começar. Você tem um limite de " + limiteDeChutes + " chutes!");
 
 while  (chute != numeroMentalizado) {
-  // incrementando a variavel  chutes
- chutes++;
-
+  
+  //se atingir o limite de chutes
+  if(chutes >= limiteDeChutes) {
+    alert ("Você atingiu o limite de chutes. O jogo acabou. ");
+   break}
+  
   var chute = prompt("Chute um número de 0 a 100")
+  // incrementando a variavel  chutes
+  chutes++;
+
   //se o chute for igual ao numero mentalizado
   if (chute == numeroMentalizado) {
     alert("Parabéns, você acertou em " + chutes + " chutes!");
